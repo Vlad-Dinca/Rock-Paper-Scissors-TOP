@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <script src="javascript.js" defer></script>
-    <link ref="stylesheet" src="style.css">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <div>
-        <button id="rock">ROCK</button>
-        <button id="paper">PAPER</button>
-        <button id="scissors">SCISSORS</button>
+    <header>ROCK PAPER SCISSORS</header>
+    <div id="game">
+        <div id="choices">
+            <button id="rock">ROCK</button>
+            <button id="paper">PAPER</button>
+            <button id="scissors">SCISSORS</button>
+        </div>
         <ul>
-            <li class="hChoice"></li>
-            <li class="cChoice"></li>
-            <li class="results"></li>           
+            <li class="hChoice">The human hasn't choose yet!</li>
+            <li class="cChoice">The computer hasn't choose yet!</li>
+            <li class="results"> </li>
+            <li class="score">The score is: Human: Computer: Draws:</li>           
         </ul>
     </div> 
+    <footer>
+        Copyright © <script>document.write(new Date().getFullYear());</script> Vlad-Dinca
+    </footer>
 </body>
 </html>
