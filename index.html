@@ -2,28 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="javascript.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore.js"></script>
     <title>Rock Paper Scissors</title>
 </head>
 <body>
     <header>ROCK PAPER SCISSORS</header>
     <div id="game">
         <div id="choices">
-            <button id="rock">ROCK</button>
-            <button id="paper">PAPER</button>
-            <button id="scissors">SCISSORS</button>
+            <input id="rock" type="image" src="./images/rock.svg">
+            <input id="paper" type="image" src="./images/paper.svg">
+            <input id="scissors" type="image" src="./images/scissors.svg">
         </div>
         <ul>
             <li class="hChoice">The human hasn't choose yet!</li>
             <li class="cChoice">The computer hasn't choose yet!</li>
-            <li class="results"> </li>
-            <li class="score">The score is: Human: Computer: Draws:</li>           
+            <li class="results">No game played yet.</li>
+            <li class="score">The score is: Human: 0 Computer: 0</li>           
         </ul>
-    </div> 
+    </div>
+    
+    <div id="myModal" class="modal">
+        <div class="modalContent">
+            <p class="modalText">Some text in the Modal..</p>
+            <img src="./images/trophy.svg" alt="trophy" id="modalImg">
+            <span class="close">Play Again?</span>
+        </div>
+    </div>
+    
     <footer>
-        Copyright © <script>document.write(new Date().getFullYear());</script> Vlad-Dinca
+        <div id="copyright"></div>
     </footer>
+    <script src="javascript.js"></script>
 </body>
 </html>
